@@ -96,6 +96,10 @@ letter-spacing: 0.03em;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-link:hover,
@@ -107,7 +111,6 @@ letter-spacing: 0.03em;
 .social-link:hover .social-icon,
 .social-link:focus .social-icon
 {
-    background-color:var(--secondary-color);
     fill:var(--third-color);
 }
 
@@ -163,6 +166,9 @@ line-height: 1.143;
 letter-spacing: 0.02em;
 color:var(--main-color);
 text-decoration: none;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current{
@@ -188,6 +194,9 @@ line-height: 1.143;
 letter-spacing: 0.02em;
 color:var(--forth-color);
 text-decoration: none;
+transition-property: color, fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -379,6 +388,9 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list{
@@ -388,6 +400,9 @@ border-radius: 0px 0px 4px 4px;
 
 .clients-logo{
     fill:#AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-container:hover,
@@ -430,6 +445,9 @@ padding-top: 6px;
 padding-bottom: 6px;
 padding-right: 22px;
 padding-left: 22px;
+transition-property: border-color, color, box-shadow;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -450,6 +468,9 @@ padding-left: 22px;
 .offer-item{
     margin-bottom: 30px;
     border-bottom: 1px solid #EEEEEE;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -509,6 +530,9 @@ text-decoration: none;
 
 .address-link-contact{
     color:var(--footer-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link,
