@@ -169,6 +169,7 @@ text-decoration: none;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
 }
 
 .current{
@@ -197,6 +198,18 @@ text-decoration: none;
 transition-property: color, fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after{
+    content:"";
+    display: block;
+    width: 53px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top:45px;
+    border-radius: 2px;
+    left:2px;
 }
 
 
