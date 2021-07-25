@@ -504,6 +504,39 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
+.overlay{
+    width:100%;
+    height:100%;
+    background-color: rgba(33, 150, 243, 0.9);;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.offer-item:hover .overlay{
+    transform: translatey(0);
+}
+
+.overlay>p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.555;
+    letter-spacing: 0.03em;
+    color: var(--third-color);
+    width: 301px;
+}
+
 .offer-item{
     margin-bottom: 30px;
     border-bottom: 1px solid #EEEEEE;
